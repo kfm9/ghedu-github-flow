@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,34 +25,34 @@
             padding: 0;
         }
 
-        .flex li {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-        }
+            .flex li {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
 
-        .flex > li > label, .flex li p {
-            flex: 1 0 120px;
-            max-width: 120px;
-            margin-left: 0;
-        }
- 
-        .flex > li > label + * {
-            flex: 1 0 220px;
-        }
+                .flex > li > label, .flex li p {
+                    flex: 1 0 120px;
+                    max-width: 120px;
+                    margin-left: 0;
+                }
 
-        .flex > li:not(:last-child) {
-            margin-bottom: 10px;
-        }
+                    .flex > li > label + * {
+                        flex: 1 0 220px;
+                    }
 
-        .flex li button {
-            margin-left: auto;
-            padding: 8px 16px;
-        }
+            .flex > li:not(:last-child) {
+                margin-bottom: 10px;
+            }
 
-        .flex li input, .flex li select {
-            padding: 5px;
-        }
+            .flex li button {
+                margin-left: auto;
+                padding: 8px 16px;
+            }
+
+            .flex li input, .flex li select {
+                padding: 5px;
+            }
     </style>
 </head>
 
@@ -65,11 +65,11 @@
         <ul class="flex">
             <li>
                 <label for="parameter1">Parameter 1</label>
-                <input type="text" id="parameter1" placeholder="Enter the first parameter here">
+                <input type="number" id="parameter1" placeholder="Enter the first parameter here">
             </li>
             <li>
                 <label for="parameter2">Parameter 2</label>
-                <input type="text" id="parameter2" placeholder="Enter the second parameter here">
+                <input type="number" id="parameter2" placeholder="Enter the second parameter here">
             </li>
             <li>
                 <label for="operation">Operation</label>

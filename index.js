@@ -17,9 +17,27 @@ function calculate() {
         errorArea.hidden = true;
     }
 
-    // ToDo: Call calculation logic. For now, we just assume the universal answer to everything ;-)
-    let result = 42;
+    let result;
+    switch (operationSelect.value) {
+        case 'add':
+            result = add(parseInt(parameter1Input.value), parseInt(parameter2.value));
+            break;
+        case 'div':
+            result = div(parseInt(parameter1Input.value), parseInt(parameter2.value));
+            break;
+        default:
+            console.error('Invalid operation.');
+            return;
+    }
 
     resultSpan.innerText = result.toString();
     resultArea.hidden = false;
+}
+
+function add(x, y) {
+    return x + y;
+}
+
+function div(x, y) {
+    return x / y;
 }
